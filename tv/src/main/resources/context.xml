@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <!--  <bean class="com.xworkz.tv.Tv">
+   <constructor-arg name="name" value="SHARAN"></constructor-arg >
+   <constructor-arg name="price" value="50000d"></constructor-arg >
+   <constructor-arg name="brand" value="LG"></constructor-arg >
+   <constructor-arg name="display" ref="disp"></constructor-arg>
+   <constructor-arg name="remote" ref="rem"> </constructor-arg>   
+   <constructor-arg name="box" ref="bo"></constructor-arg> 
+   <constructor-arg name="stand" ref="std"></constructor-arg>
+     </bean>-->  
+      <!--String name, double price, String brand, Display display, Remote remote, SetupBox box, Stand stand -->  
+    
+     <bean class="com.xworkz.tv.Tv">
+   <property  name="name" value="SHARAN"> </property >
+   <property name="price" value="50000d"></property >
+   <property name="brand" value="LG"></property >
+   <property name="display" ref="disp"></property>
+   <property name="remote" ref="rem"> </property>   
+   <property name="box" ref="bo"></property> 
+   <property name="stand" ref="std"></property>
+     </bean>
+     
+     
+<!--   <bean class="com.xworkz.tv.Display"  id="disp">
+<constructor-arg name="type" value="LCD"></constructor-arg>
+</bean>
+<bean class="com.xworkz.tv.Remote"  id="rem">
+<constructor-arg name="type" value="TATA"></constructor-arg>
+</bean>
+<bean class ="com.xworkz.tv.SetupBox" id="bo">
+<constructor-arg name="type" value="TATA SKY"></constructor-arg>
+</bean>
+<bean class="com.xworkz.tv.Stand" id="std">
+<constructor-arg name="type" value="STRONG"></constructor-arg>
+</bean>
+-->   
+
+<bean class="com.xworkz.tv.Display"  id="disp">
+<property name="type" value="LCD"></property>
+</bean>
+<bean class="com.xworkz.tv.Remote"  id="rem">
+<property name="type" value="TATA"></property>
+</bean>
+<bean class ="com.xworkz.tv.SetupBox" id="bo">
+<property name="type" value="TATA SKY"></property>
+</bean>
+<bean class="com.xworkz.tv.Stand" id="std">
+<property name="type" value="STRONG"></property>
+</bean>
+
+
+</beans>
