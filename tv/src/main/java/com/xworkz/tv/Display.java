@@ -1,5 +1,9 @@
 package com.xworkz.tv;
 
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class Display extends Object {
 	private String type;
 

@@ -1,5 +1,8 @@
 package com.xworkz.tv;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tv {
 	 private String name;
 	 private double price;
