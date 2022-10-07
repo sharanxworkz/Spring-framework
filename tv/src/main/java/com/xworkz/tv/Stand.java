@@ -1,10 +1,11 @@
 package com.xworkz.tv;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Stand extends Object {
-
+	@Value("SONY STAND")
 	private String type;
 
 	public Stand() {

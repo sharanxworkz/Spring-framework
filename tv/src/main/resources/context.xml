@@ -7,7 +7,17 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.xworkz.tv"></context:component-scan>
+    <context:component-scan base-package="com.xworkz"></context:component-scan>
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations" value="tv.properties"></property>
+</bean>
+<bean class="com.xworkz.tv.Tv"  >
+<property name="name" value="${TvNames}"></property>
+</bean   >
+
+
+
+
 
 </beans>
 

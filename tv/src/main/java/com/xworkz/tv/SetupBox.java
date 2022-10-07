@@ -1,9 +1,11 @@
 package com.xworkz.tv;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SetupBox extends Object {
+	@Value("TATA SKY")
 	private String type;
 
 	public SetupBox() {

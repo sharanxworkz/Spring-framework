@@ -1,10 +1,12 @@
 package com.xworkz.tv;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Remote extends Object {
 
+	@Value("SONY REMOTE")
 	private String type;
 
 	public Remote() {
