@@ -20,6 +20,6 @@ public String onCreated(SuicideDTO suicideDTO,Model model) {
 	model.addAttribute("name", "Displaying all Data");
 	model.addAttribute("DTO", suicideDTO);
 	return "CommittedSuicide.jsp";
-
+   
 }
 }
