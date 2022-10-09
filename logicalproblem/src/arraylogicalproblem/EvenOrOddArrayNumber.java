@@ -23,7 +23,7 @@ public class EvenOrOddArrayNumber {
 		
 		for(int even:a) {
 			if(even%2==0) {
-				System.out.println(even);		
+				System.out.println(even); 		
 			}
 		}
 
